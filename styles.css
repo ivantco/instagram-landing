@@ -1,0 +1,162 @@
+/* general formatting */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+
+/* specific formatting */
+
+.instagram-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.instagram-mobile img {
+    height: 50rem;
+}
+
+.login-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    height: 34rem;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.login-options:nth-child(1) {
+    min-height: 19rem;
+
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden    ;
+}
+
+.profile-thumb img {
+    height: 7rem;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.instagram-remove {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.blue-link {
+    color: #0095f6;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.market-logos {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.download-logo {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.download-logo:nth-child(1) {
+    background-image: url(img/apple-button.png);
+}
+
+.download-logo:nth-child(2) {
+    background-image: url(img/googleplay-button.png);
+}
+
+/* responsive media queries */
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #fff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-mobile {
+        display: none;
+    }
+
+    .login-group {
+        width: 100%;
+    }
+
+    .login-options {
+        border: 1px solid transparent;  
+    }
+}
